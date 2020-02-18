@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>User</title>
+  </head>
+  <body>
+    <h1>User Home</h1>
+
+    <form action="/user/new" method="POST">
+      <label for="username">username:</label>
+      <input type="text" id="name" name="name" /><br /><br />
+      <input type="submit" value="Submit" />
+    </form>
+
+    <p>total users : <%= users.length %></p>
+    <ol>
+      <% users.forEach(function(user) { %>
+      <li>username : <%= user.name %></li>
+      <% }); %>
+    </ol>
+  </body>
+</html>

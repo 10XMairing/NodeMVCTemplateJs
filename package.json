@@ -1,0 +1,23 @@
+{
+  "name": "jsmvctemplate",
+  "version": "1.0.0",
+  "description": "javascript template by tenx",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dodo": "node loaders/winston-module.js",
+    "dev": "cross-env NODE_ENV=development node -r dotenv/config index.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "cross-env": "^7.0.0",
+    "dotenv": "^8.2.0",
+    "ejs": "^3.0.1",
+    "express": "^4.17.1",
+    "mongoose": "^5.9.1",
+    "morgan": "^1.9.1",
+    "winston": "^3.2.1"
+  }
+}
